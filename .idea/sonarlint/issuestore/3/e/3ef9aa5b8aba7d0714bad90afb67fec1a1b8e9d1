@@ -1,7 +1,17 @@
 
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(±ÿÅ»8˜”÷«Ù1
+w
+java:S1104	"UMake resultado a static final constant or non-public and provide accessors if needed.(ô³ëÔüÿÿÿÿ8‚æÊÙ1
+Q
+java:S1444	"/Make this "public static resultado" field final(ô³ëÔüÿÿÿÿ8‚æÊÙ1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(±ÿÅ»8ƒæÊÙ1
 ?
-java:S1659""Declare "num2" on a separate line.(ÛÂá˜8”÷«Ù1
+java:S1659""Declare "num2" on a separate line.(ÛÂá˜8‡æÊÙ1
 V
-java:S5993"9Change the visibility of this constructor to "protected".(“æ¼í8”÷«Ù1
-L	java:S1060"+Replace this use of System.out by a logger.(º¹»àÿÿÿÿÿ8¢”÷«Ù1
+java:S5993"9Change the visibility of this constructor to "protected".(“æ¼í8ˆæÊÙ1
+?
+java:S2386	"Make this member "protected".(ô³ëÔüÿÿÿÿ8ˆæÊÙ1
+X
+java:S2696&"6Make the enclosing method "static" or remove this set.(ã‡ç¸ıÿÿÿÿ8æÊÙ1
+W
+java:S2209&"5Change this instance-reference to a static reference.(ã‡ç¸ıÿÿÿÿ8æÊÙ1
+L	java:S1060"+Replace this use of System.out by a logger.(º¹»àÿÿÿÿÿ8æÊÙ1

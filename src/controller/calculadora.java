@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public abstract class calculadora {
     float num1, num2;
-    List<Float> resultado = new ArrayList<>();
+    public static List<Float> resultado = new ArrayList<>();
     Scanner leer = new Scanner(System.in);
 
     public calculadora(float num1, float num2) {
@@ -48,5 +48,8 @@ public abstract class calculadora {
             System.out.println("La lista de resultados está vacía.");
             return Float.NaN; // Devuelve NaN (Not a Number) para indicar que no hay ningún resultado disponible
         }
+    }
+    public void limpiarResultado(){
+        resultado.clear();
     }
 }

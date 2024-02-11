@@ -1,9 +1,15 @@
 
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ã€˜öşÿÿÿÿ8ŸÁ¬Ù1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ã€˜öşÿÿÿÿ8ğÈƒÊÙ1
 G	java:S106
-"+Replace this use of System.out by a logger.(àÖÃ§8œ¤Ñ¬Ù1
-G	java:S106"+Replace this use of System.out by a logger.(ú–’ó8œ¤Ñ¬Ù1
-L	java:S106"+Replace this use of System.out by a logger.(û×Ï™ıÿÿÿÿ8œ¤Ñ¬Ù1
-L	java:S106"+Replace this use of System.out by a logger.(•Ş²üÿÿÿÿ8Ö˜Ó¬Ù1
-G	java:S106"+Replace this use of System.out by a logger.(Ìß»Ÿ8Ö˜Ó¬Ù1
-L	java:S106"+Replace this use of System.out by a logger.(é»€œşÿÿÿÿ8×˜Ó¬Ù1
+"+Replace this use of System.out by a logger.(àÖÃ§8ÿÈƒÊÙ1
+G	java:S106"+Replace this use of System.out by a logger.(ú–’ó8ÿÈƒÊÙ1
+L	java:S106"+Replace this use of System.out by a logger.(åÆŒÀûÿÿÿÿ8€ÉƒÊÙ1
+G	java:S106"+Replace this use of System.out by a logger.(àÖÃ§8€ÉƒÊÙ1
+G	java:S106"+Replace this use of System.out by a logger.(ú–’ó8€ÉƒÊÙ1
+L	java:S106"+Replace this use of System.out by a logger.(û×Ï™ıÿÿÿÿ8ÉƒÊÙ1
+L	java:S106"+Replace this use of System.out by a logger.(•Ş²üÿÿÿÿ8‚ÉƒÊÙ1
+G	java:S106"+Replace this use of System.out by a logger.(Ìß»Ÿ8‚ÉƒÊÙ1
+L	java:S106#"+Replace this use of System.out by a logger.(åÆŒÀûÿÿÿÿ8‚ÉƒÊÙ1
+L	java:S106$"+Replace this use of System.out by a logger.(•Ş²üÿÿÿÿ8‰……ÊÙ1
+G	java:S106%"+Replace this use of System.out by a logger.(Ìß»Ÿ8‰……ÊÙ1
+L	java:S106)"+Replace this use of System.out by a logger.(é»€œşÿÿÿÿ8–Ã†ÊÙ1

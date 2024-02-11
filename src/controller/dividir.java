@@ -11,6 +11,15 @@ public class dividir extends calculadora{
         num1 = leer.nextFloat();
         System.out.println("ingrese otro numero");
         num2 = leer.nextFloat();
+        if (num2 == 0){
+            do {
+                System.out.println("lo siento, no es posible dividir entre 0, ingresa otro numero");
+                System.out.println("por favor digite un numero");
+                num1 = leer.nextFloat();
+                System.out.println("ingrese otro numero");
+                num2 = leer.nextFloat();
+            }while (num2 == 0);
+        }
         System.out.println("El resultado de la divicion de " + num1 + " / " + num2 + " es:");
         resultado.add(num1 / num2);
         return resultado.get(resultado.size() - 1);
@@ -21,6 +30,14 @@ public class dividir extends calculadora{
         System.out.println("el primer numero es " + obtenerUltimoResultado());
         System.out.println("ingrese el segundo numero");
         num2 = leer.nextFloat();
+        if (num2 == 0){
+            do {
+                System.out.println("lo siento, no es posible dividir entre 0, ingresa otro numero");
+                System.out.println("el primer numero es " + obtenerUltimoResultado());
+                System.out.println("ingrese el segundo numero");
+                num2 = leer.nextFloat();
+            }while (num2 == 0);
+        }
         System.out.println("El resultado de la divicion de " + obtenerUltimoResultado() +
                 " / " + num2 + " es:");
         resultado.add(resultado.get(resultado.size()-1) / num2);

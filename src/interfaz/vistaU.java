@@ -37,6 +37,7 @@ public class vistaU {
                                     C = true;
                                 }else{
                                     C = false;
+                                    objSumar.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar con la suma? Y/N");
                                 decision = leer.next().charAt(0);
@@ -50,6 +51,7 @@ public class vistaU {
                                 C = true;
                             }else{
                                 C = false;
+                                objSumar.limpiarResultado();
                             }
                             System.out.println("¿desea continuar con la suma? Y/N");
                             decision = leer.next().charAt(0);
@@ -63,6 +65,7 @@ public class vistaU {
                                         C = true;
                                     }else{
                                         C = false;
+                                        objSumar.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar con la suma? Y/N");
                                     decision = leer.next().charAt(0);
@@ -84,6 +87,7 @@ public class vistaU {
                                     C = true;
                                 }else{
                                     C = false;
+                                    objRestar.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar con la resta? Y/N");
                                 decision = leer.next().charAt(0);
@@ -97,6 +101,7 @@ public class vistaU {
                                 C = true;
                             }else{
                                 C = false;
+                                objRestar.limpiarResultado();
                             }
                             System.out.println("¿desea continuar con la resta? Y/N");
                             decision = leer.next().charAt(0);
@@ -110,6 +115,7 @@ public class vistaU {
                                         C = true;
                                     }else{
                                         C = false;
+                                        objRestar.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar con la resta? Y/N");
                                     decision = leer.next().charAt(0);
@@ -131,6 +137,7 @@ public class vistaU {
                                     C = true;
                                 }else{
                                     C = false;
+                                    objMultiplicar.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar con la multiplicacion? Y/N");
                                 decision = leer.next().charAt(0);
@@ -144,6 +151,7 @@ public class vistaU {
                                 C = true;
                             }else{
                                 C = false;
+                                objMultiplicar.limpiarResultado();
                             }
                             System.out.println("¿desea continuar con la multiplicacion? Y/N");
                             decision = leer.next().charAt(0);
@@ -157,6 +165,7 @@ public class vistaU {
                                         C = true;
                                     }else{
                                         C = false;
+                                        objMultiplicar.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar con la multiplicacion? " +
                                             "Y/N");
@@ -179,6 +188,7 @@ public class vistaU {
                                     C = true;
                                 }else{
                                     C = false;
+                                    objDividir.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar con la divicion? Y/N");
                                 decision = leer.next().charAt(0);
@@ -192,6 +202,7 @@ public class vistaU {
                                 C = true;
                             }else{
                                 C = false;
+                                objDividir.limpiarResultado();
                             }
                             System.out.println("¿desea continuar con la divicion? Y/N");
                             decision = leer.next().charAt(0);
@@ -205,6 +216,7 @@ public class vistaU {
                                         C = true;
                                     }else{
                                         C = false;
+                                        objDividir.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar con la divicion? Y/N");
                                     decision = leer.next().charAt(0);
