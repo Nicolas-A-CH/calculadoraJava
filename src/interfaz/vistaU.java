@@ -1,14 +1,18 @@
 package interfaz;
 
-import controller.calculadora;
+import controller.*;
 
 import java.util.Scanner;
 
 public class vistaU {
     Scanner leer = new Scanner(System.in);
-    calculadora objCalculadora = new calculadora(0, 0);
+    sumar objSumar = new sumar(0,0);
+    restar objRestar = new restar(0,0);
+    multiplicar objMultiplicar = new multiplicar(0,0);
+    dividir objDividir = new dividir(0,0);
     byte opcion;
     char decision, Dborrado;
+    boolean C = false;
 
     public void interfazCalculadora() {
         System.out.println("Bienvenidos a la calculadora de Nicolas :)");
@@ -24,27 +28,194 @@ public class vistaU {
                 case 1:
                     do {
                         System.out.println("Usted a elegido la opcion de sumar");
-                        System.out.println("por favor digite un numero");
-                        objCalculadora.setNum1(leer.nextFloat());
-                        System.out.println("ingrese otro numero");
-                        objCalculadora.setNum2(leer.nextFloat());
-                        System.out.println("El resultado de la suma de " + objCalculadora.getNum1() + " + " + objCalculadora.getNum2() + " es:");
-                        System.out.println(objCalculadora.sumar());
-                        System.out.println("¿desea continuar? Y/N");
-                        decision = leer.next().charAt(0);
-                        if (decision == 'Y' || decision == 'y'){
-                            System.out.println("Decea borrar el calculo? Y/N");
+                        if (C == true){
+                            do {
+                                System.out.println(objSumar.opracionResNum());
+                                System.out.println("Desea borrar el calculo? Y/N");
+                                Dborrado = leer.next().charAt(0);
+                                if (Dborrado == 'N' || Dborrado == 'n'){
+                                    C = true;
+                                }else{
+                                    C = false;
+                                }
+                                System.out.println("¿desea continuar con la suma? Y/N");
+                                decision = leer.next().charAt(0);
+                            } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                    == 'y'));
+                        }else {
+                            System.out.println(objSumar.operacionDosNum());
+                            System.out.println("Desea borrar el calculo? Y/N");
                             Dborrado = leer.next().charAt(0);
                             if (Dborrado == 'N' || Dborrado == 'n'){
-
+                                C = true;
+                            }else{
+                                C = false;
+                            }
+                            System.out.println("¿desea continuar con la suma? Y/N");
+                            decision = leer.next().charAt(0);
+                            if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                    == 'y')) {
+                                do {
+                                    System.out.println(objSumar.opracionResNum());
+                                    System.out.println("Desea borrar el calculo? Y/N");
+                                    Dborrado = leer.next().charAt(0);
+                                    if (Dborrado == 'N' || Dborrado == 'n'){
+                                        C = true;
+                                    }else{
+                                        C = false;
+                                    }
+                                    System.out.println("¿desea continuar con la suma? Y/N");
+                                    decision = leer.next().charAt(0);
+                                } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                        == 'y'));
                             }
                         }
                     } while (decision == 'Y' || decision == 'y');
                     break;
                 case 2:
-                    System.out.println();
+                    do {
+                        System.out.println("Usted a elegido la opcion de restar");
+                        if (C == true){
+                            do {
+                                System.out.println(objRestar.opracionResNum());
+                                System.out.println("Desea borrar el calculo? Y/N");
+                                Dborrado = leer.next().charAt(0);
+                                if (Dborrado == 'N' || Dborrado == 'n'){
+                                    C = true;
+                                }else{
+                                    C = false;
+                                }
+                                System.out.println("¿desea continuar con la resta? Y/N");
+                                decision = leer.next().charAt(0);
+                            } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                    == 'y'));
+                        }else {
+                            System.out.println(objRestar.operacionDosNum());
+                            System.out.println("Desea borrar el calculo? Y/N");
+                            Dborrado = leer.next().charAt(0);
+                            if (Dborrado == 'N' || Dborrado == 'n'){
+                                C = true;
+                            }else{
+                                C = false;
+                            }
+                            System.out.println("¿desea continuar con la resta? Y/N");
+                            decision = leer.next().charAt(0);
+                            if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                    == 'y')) {
+                                do {
+                                    System.out.println(objRestar.opracionResNum());
+                                    System.out.println("Desea borrar el calculo? Y/N");
+                                    Dborrado = leer.next().charAt(0);
+                                    if (Dborrado == 'N' || Dborrado == 'n'){
+                                        C = true;
+                                    }else{
+                                        C = false;
+                                    }
+                                    System.out.println("¿desea continuar con la resta? Y/N");
+                                    decision = leer.next().charAt(0);
+                                } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                        == 'y'));
+                            }
+                        }
+                    } while (decision == 'Y' || decision == 'y');
+                    break;
+                case 3:
+                    do {
+                        System.out.println("Usted a elegido la opcion de multiplicar");
+                        if (C == true){
+                            do {
+                                System.out.println(objMultiplicar.opracionResNum());
+                                System.out.println("Desea borrar el calculo? Y/N");
+                                Dborrado = leer.next().charAt(0);
+                                if (Dborrado == 'N' || Dborrado == 'n'){
+                                    C = true;
+                                }else{
+                                    C = false;
+                                }
+                                System.out.println("¿desea continuar con la multiplicacion? Y/N");
+                                decision = leer.next().charAt(0);
+                            } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                    == 'y'));
+                        }else {
+                            System.out.println(objMultiplicar.operacionDosNum());
+                            System.out.println("Desea borrar el calculo? Y/N");
+                            Dborrado = leer.next().charAt(0);
+                            if (Dborrado == 'N' || Dborrado == 'n'){
+                                C = true;
+                            }else{
+                                C = false;
+                            }
+                            System.out.println("¿desea continuar con la multiplicacion? Y/N");
+                            decision = leer.next().charAt(0);
+                            if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                    == 'y')) {
+                                do {
+                                    System.out.println(objMultiplicar.opracionResNum());
+                                    System.out.println("Desea borrar el calculo? Y/N");
+                                    Dborrado = leer.next().charAt(0);
+                                    if (Dborrado == 'N' || Dborrado == 'n'){
+                                        C = true;
+                                    }else{
+                                        C = false;
+                                    }
+                                    System.out.println("¿desea continuar con la multiplicacion? " +
+                                            "Y/N");
+                                    decision = leer.next().charAt(0);
+                                } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                        == 'y'));
+                            }
+                        }
+                    } while (decision == 'Y' || decision == 'y');
+                    break;
+                case 4:
+                    do {
+                        System.out.println("Usted a elegido la opcion de dividir");
+                        if (C == true){
+                            do {
+                                System.out.println(objDividir.opracionResNum());
+                                System.out.println("Desea borrar el calculo? Y/N");
+                                Dborrado = leer.next().charAt(0);
+                                if (Dborrado == 'N' || Dborrado == 'n'){
+                                    C = true;
+                                }else{
+                                    C = false;
+                                }
+                                System.out.println("¿desea continuar con la divicion? Y/N");
+                                decision = leer.next().charAt(0);
+                            } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                    == 'y'));
+                        }else {
+                            System.out.println(objDividir.operacionDosNum());
+                            System.out.println("Desea borrar el calculo? Y/N");
+                            Dborrado = leer.next().charAt(0);
+                            if (Dborrado == 'N' || Dborrado == 'n'){
+                                C = true;
+                            }else{
+                                C = false;
+                            }
+                            System.out.println("¿desea continuar con la divicion? Y/N");
+                            decision = leer.next().charAt(0);
+                            if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                    == 'y')) {
+                                do {
+                                    System.out.println(objDividir.opracionResNum());
+                                    System.out.println("Desea borrar el calculo? Y/N");
+                                    Dborrado = leer.next().charAt(0);
+                                    if (Dborrado == 'N' || Dborrado == 'n'){
+                                        C = true;
+                                    }else{
+                                        C = false;
+                                    }
+                                    System.out.println("¿desea continuar con la divicion? Y/N");
+                                    decision = leer.next().charAt(0);
+                                } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
+                                        == 'y'));
+                            }
+                        }
+                    } while (decision == 'Y' || decision == 'y');
                     break;
             }
         } while (opcion != 0);
+        System.out.println("Adios amigo");
     }
 }
