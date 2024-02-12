@@ -7,8 +7,8 @@ import java.util.Scanner;
 public abstract class calculadora {
     float num1, num2;
     public static List<Float> resultado = new ArrayList<>();
-    Scanner leer = new Scanner(System.in);
 
+    Scanner leer = new Scanner(System.in);
     public calculadora(float num1, float num2) {
         this.num1 = num1;
         this.num2 = num2;
