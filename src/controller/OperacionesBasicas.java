@@ -1,16 +1,15 @@
 package controller;
 public interface OperacionesBasicas{
-    float num1 = 0, num2 = 0;
-    public float sumarDosNum();
-    public float sumarResNum();
-    public float restarDosNum();
-    public float restarResNum();
-    public float multiplicarDosNum();
-    public float multiplcarResNum();
-    public float dividirDosNum();
-    public float dividirResNum();
-    public float porcentajeDosNum();
-    public float porcentajeResNum();
-    public float raizCudradaDosNum();
+    public float sumarDosNum(float num1, float num2);
+    public float sumarResNum(float num2);
+    public float restarDosNum(float num1, float num2);
+    public float restarResNum(float num2);
+    public float multiplicarDosNum(float num1, float num2);
+    public float multiplcarResNum(float num2);
+    public float dividirDosNum(float num1, float num2);
+    public float dividirResNum(float num2);
+    public float porcentajeDosNum(float num1, float num2);
+    public float porcentajeResNum(float num2);
+    public float raizCudradaDosNum(float num1);
     public float raizCuadradaResNum();
 }
