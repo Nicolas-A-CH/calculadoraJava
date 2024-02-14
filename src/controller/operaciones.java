@@ -170,13 +170,19 @@ public class operaciones implements OperacionesBasicas, OperacionesCientificas{
     }
 
     @Override
-    public float potenciaDosNum(float base, float exponente) {
+    public float potenciaDosNum(float base, float exponente, char opcionMul) {
         System.out.print("ingrese el numero base: ");
         base = leer.nextFloat();
         System.out.print("ingrese el exponente");
         exponente = leer.nextFloat();
-        System.out.println("el resultado de " + base + " ^ " + exponente + " es: ");
-        resultado.add((float) Math.pow(base,exponente));
+        System.out.println("desea hacer una operacion basica junto a su potencia? Y/N");
+        opcionMul = leer.next().charAt(0);
+        if (opcionMul == 'y' || opcionMul == 'Y'){
+            System.out.println("Seleccione la operacion que decea hacer");
+        }else{
+            System.out.println("el resultado de " + base + " ^ " + exponente + " es: ");
+            resultado.add((float) Math.pow(base,exponente));
+        }
         return resultado.get(resultado.size() - 1);
     }
 
@@ -250,16 +256,7 @@ public class operaciones implements OperacionesBasicas, OperacionesCientificas{
 
     @Override
     public float factorialDosNum(float n) {
-        if (n == 0){
-            resultado.add(1F);
-        return resultado.get(resultado.size() - 1);
-    }else
-            int factorial = 1;
-        for (int i = 1; i <= n; i++) {
-            factorial = i;
-        }
-            resultado.add(n * factorial(n - 1));
-            return resultado.get(resultado.size() - 1);
+        return 0;
     }
 
     @Override

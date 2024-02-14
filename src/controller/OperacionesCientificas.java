@@ -1,7 +1,7 @@
 package controller;
 
 public interface OperacionesCientificas {
-    public float potenciaDosNum(float base, float exponente);
+    public float potenciaDosNum(float base, float exponente, char opcionMul);
     public float potenciaResNum(float exponente);
     public float senoDosNum(float angulo, float radianes);
     public float senoResNum(float radianes);
