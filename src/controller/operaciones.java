@@ -210,28 +210,56 @@ public class operaciones implements OperacionesBasicas, OperacionesCientificas{
     }
 
     @Override
-    public float cosenoDosNum(float num1) {
-        return 0;
+    public float cosenoDosNum(float angulo, float radianes) {
+        System.out.print("Ingrese el ángulo en grados: ");
+        angulo = leer.nextFloat();
+        radianes = (float) Math.toRadians(angulo);
+        System.out.println("El coseno de " + angulo + " grados es: ");
+        resultado.add((float) Math.cos(radianes));
+        return resultado.get(resultado.size() - 1);
     }
 
     @Override
-    public float cosenoResNum() {
-        return 0;
+    public float cosenoResNum(float radianes) {
+        System.out.print("El ángulo en grados es: " + resultado.get(resultado.size() - 1));
+        radianes = (float) Math.toRadians(resultado.get(resultado.size() - 1));
+        System.out.println("El coseno de " + resultado.get(resultado.size() - 1) + " grados es: ");
+        resultado.add((float) Math.cos(radianes));
+        return resultado.get(resultado.size() - 1);
+
     }
 
     @Override
-    public float tangenteDosNum(float num1) {
-        return 0;
+    public float tangenteDosNum(float angulo, float radianes) {
+        System.out.print("Ingrese el ángulo en grados: ");
+        angulo = leer.nextFloat();
+        radianes = (float) Math.toRadians(angulo);
+        System.out.println("La tangente de " + angulo + " grados es: ");
+        resultado.add((float) Math.tan(radianes));
+        return resultado.get(resultado.size() - 1);
     }
 
     @Override
-    public float tangenteResNum() {
-        return 0;
+    public float tangenteResNum(float radianes) {
+        System.out.print("El ángulo en grados es: " + resultado.get(resultado.size() - 1));
+        radianes = (float) Math.toRadians(resultado.get(resultado.size() - 1));
+        System.out.println("La tangente de " + resultado.get(resultado.size() - 1) + " grados es: ");
+        resultado.add((float) Math.tan(radianes));
+        return resultado.get(resultado.size() - 1);
     }
 
     @Override
-    public float factorialDosNum(float num1) {
-        return 0;
+    public float factorialDosNum(float n) {
+        if (n == 0){
+            resultado.add(1F);
+        return resultado.get(resultado.size() - 1);
+    }else
+            int factorial = 1;
+        for (int i = 1; i <= n; i++) {
+            factorial = i;
+        }
+            resultado.add(n * factorial(n - 1));
+            return resultado.get(resultado.size() - 1);
     }
 
     @Override

@@ -5,10 +5,10 @@ public interface OperacionesCientificas {
     public float potenciaResNum(float exponente);
     public float senoDosNum(float angulo, float radianes);
     public float senoResNum(float radianes);
-    public float cosenoDosNum(float num1);
-    public float cosenoResNum();
-    public float tangenteDosNum(float num1);
-    public float tangenteResNum();
-    public float factorialDosNum(float num1);
+    public float cosenoDosNum(float angulo, float radianes);
+    public float cosenoResNum(float radianes);
+    public float tangenteDosNum(float angulo, float radianes);
+    public float tangenteResNum(float radianes);
+    public float factorialDosNum(float n);
     public float factorialResNum();
 }

@@ -6,12 +6,7 @@ import java.util.Scanner;
 
 public class vistaU {
     Scanner leer = new Scanner(System.in);
-    sumar objSumar = new sumar(0,0);
-    restar objRestar = new restar(0,0);
-    multiplicar objMultiplicar = new multiplicar(0,0);
-    dividir objDividir = new dividir(0,0);
-    raizCuadrada objRaizCuadrada = new raizCuadrada(0,0);
-    porcentaje objPorcentaje = new porcentaje(0,0);
+    operaciones objOperaciones = new operaciones();
     byte opcion;
     char decision, Dborrado;
     boolean C = false;
@@ -34,42 +29,42 @@ public class vistaU {
                         System.out.println("Usted a elegido la opcion de sumar");
                         if (C == true){
                             do {
-                                System.out.println(objSumar.opracionResNum());
+                                System.out.println(objOperaciones.sumarResNum(0));
                                 System.out.println("Desea borrar el calculo? Y/N");
                                 Dborrado = leer.next().charAt(0);
                                 if (Dborrado == 'N' || Dborrado == 'n'){
                                     C = true;
                                 }else{
                                     C = false;
-                                    objSumar.limpiarResultado();
+                                    objOperaciones.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar con la suma? Y/N");
                                 decision = leer.next().charAt(0);
                             } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y'));
                         }else {
-                            System.out.println(objSumar.operacionDosNum());
+                            System.out.println(objOperaciones.sumarDosNum(0,0));
                             System.out.println("Desea borrar el calculo? Y/N");
                             Dborrado = leer.next().charAt(0);
                             if (Dborrado == 'N' || Dborrado == 'n'){
                                 C = true;
                             }else{
                                 C = false;
-                                objSumar.limpiarResultado();
+                                objOperaciones.limpiarResultado();
                             }
                             System.out.println("¿desea continuar con la suma? Y/N");
                             decision = leer.next().charAt(0);
                             if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y')) {
                                 do {
-                                    System.out.println(objSumar.opracionResNum());
+                                    System.out.println(objOperaciones.sumarResNum(0));
                                     System.out.println("Desea borrar el calculo? Y/N");
                                     Dborrado = leer.next().charAt(0);
                                     if (Dborrado == 'N' || Dborrado == 'n'){
                                         C = true;
                                     }else{
                                         C = false;
-                                        objSumar.limpiarResultado();
+                                        objOperaciones.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar con la suma? Y/N");
                                     decision = leer.next().charAt(0);
@@ -84,42 +79,42 @@ public class vistaU {
                         System.out.println("Usted a elegido la opcion de restar");
                         if (C == true){
                             do {
-                                System.out.println(objRestar.opracionResNum());
+                                System.out.println(objOperaciones.restarResNum(0));
                                 System.out.println("Desea borrar el calculo? Y/N");
                                 Dborrado = leer.next().charAt(0);
                                 if (Dborrado == 'N' || Dborrado == 'n'){
                                     C = true;
                                 }else{
                                     C = false;
-                                    objRestar.limpiarResultado();
+                                    objOperaciones.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar con la resta? Y/N");
                                 decision = leer.next().charAt(0);
                             } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y'));
                         }else {
-                            System.out.println(objRestar.operacionDosNum());
+                            System.out.println(objOperaciones.restarDosNum(0,0));
                             System.out.println("Desea borrar el calculo? Y/N");
                             Dborrado = leer.next().charAt(0);
                             if (Dborrado == 'N' || Dborrado == 'n'){
                                 C = true;
                             }else{
                                 C = false;
-                                objRestar.limpiarResultado();
+                                objOperaciones.limpiarResultado();
                             }
                             System.out.println("¿desea continuar con la resta? Y/N");
                             decision = leer.next().charAt(0);
                             if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y')) {
                                 do {
-                                    System.out.println(objRestar.opracionResNum());
+                                    System.out.println(objOperaciones.restarResNum(0));
                                     System.out.println("Desea borrar el calculo? Y/N");
                                     Dborrado = leer.next().charAt(0);
                                     if (Dborrado == 'N' || Dborrado == 'n'){
                                         C = true;
                                     }else{
                                         C = false;
-                                        objRestar.limpiarResultado();
+                                        objOperaciones.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar con la resta? Y/N");
                                     decision = leer.next().charAt(0);
@@ -134,42 +129,42 @@ public class vistaU {
                         System.out.println("Usted a elegido la opcion de multiplicar");
                         if (C == true){
                             do {
-                                System.out.println(objMultiplicar.opracionResNum());
+                                System.out.println(objOperaciones.multiplcarResNum(0));
                                 System.out.println("Desea borrar el calculo? Y/N");
                                 Dborrado = leer.next().charAt(0);
                                 if (Dborrado == 'N' || Dborrado == 'n'){
                                     C = true;
                                 }else{
                                     C = false;
-                                    objMultiplicar.limpiarResultado();
+                                    objOperaciones.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar con la multiplicacion? Y/N");
                                 decision = leer.next().charAt(0);
                             } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y'));
                         }else {
-                            System.out.println(objMultiplicar.operacionDosNum());
+                            System.out.println(objOperaciones.multiplicarDosNum(0,0));
                             System.out.println("Desea borrar el calculo? Y/N");
                             Dborrado = leer.next().charAt(0);
                             if (Dborrado == 'N' || Dborrado == 'n'){
                                 C = true;
                             }else{
                                 C = false;
-                                objMultiplicar.limpiarResultado();
+                                objOperaciones.limpiarResultado();
                             }
                             System.out.println("¿desea continuar con la multiplicacion? Y/N");
                             decision = leer.next().charAt(0);
                             if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y')) {
                                 do {
-                                    System.out.println(objMultiplicar.opracionResNum());
+                                    System.out.println(objOperaciones.multiplcarResNum(0));
                                     System.out.println("Desea borrar el calculo? Y/N");
                                     Dborrado = leer.next().charAt(0);
                                     if (Dborrado == 'N' || Dborrado == 'n'){
                                         C = true;
                                     }else{
                                         C = false;
-                                        objMultiplicar.limpiarResultado();
+                                        objOperaciones.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar con la multiplicacion? " +
                                             "Y/N");
@@ -185,42 +180,42 @@ public class vistaU {
                         System.out.println("Usted a elegido la opcion de dividir");
                         if (C == true){
                             do {
-                                System.out.println(objDividir.opracionResNum());
+                                System.out.println(objOperaciones.dividirResNum(0));
                                 System.out.println("Desea borrar el calculo? Y/N");
                                 Dborrado = leer.next().charAt(0);
                                 if (Dborrado == 'N' || Dborrado == 'n'){
                                     C = true;
                                 }else{
                                     C = false;
-                                    objDividir.limpiarResultado();
+                                    objOperaciones.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar con la divicion? Y/N");
                                 decision = leer.next().charAt(0);
                             } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y'));
                         }else {
-                            System.out.println(objDividir.operacionDosNum());
+                            System.out.println(objOperaciones.dividirDosNum(0,0));
                             System.out.println("Desea borrar el calculo? Y/N");
                             Dborrado = leer.next().charAt(0);
                             if (Dborrado == 'N' || Dborrado == 'n'){
                                 C = true;
                             }else{
                                 C = false;
-                                objDividir.limpiarResultado();
+                                objOperaciones.limpiarResultado();
                             }
                             System.out.println("¿desea continuar con la divicion? Y/N");
                             decision = leer.next().charAt(0);
                             if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y')) {
                                 do {
-                                    System.out.println(objDividir.opracionResNum());
+                                    System.out.println(objOperaciones.dividirResNum(0));
                                     System.out.println("Desea borrar el calculo? Y/N");
                                     Dborrado = leer.next().charAt(0);
                                     if (Dborrado == 'N' || Dborrado == 'n'){
                                         C = true;
                                     }else{
                                         C = false;
-                                        objDividir.limpiarResultado();
+                                        objOperaciones.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar con la divicion? Y/N");
                                     decision = leer.next().charAt(0);
@@ -235,42 +230,42 @@ public class vistaU {
                         System.out.println("Usted a elegido la opcion de raiz cuadrada");
                         if (C == true){
                             do {
-                                System.out.println(objRaizCuadrada.opracionResNum());
+                                System.out.println(objOperaciones.raizCuadradaResNum());
                                 System.out.println("Desea borrar el calculo? Y/N");
                                 Dborrado = leer.next().charAt(0);
                                 if (Dborrado == 'N' || Dborrado == 'n'){
                                     C = true;
                                 }else{
                                     C = false;
-                                    objSumar.limpiarResultado();
+                                    objOperaciones.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar con la suma? Y/N");
                                 decision = leer.next().charAt(0);
                             } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y'));
                         }else {
-                            System.out.println(objRaizCuadrada.operacionDosNum());
+                            System.out.println(objOperaciones.raizCudradaDosNum(0));
                             System.out.println("Desea borrar el calculo? Y/N");
                             Dborrado = leer.next().charAt(0);
                             if (Dborrado == 'N' || Dborrado == 'n'){
                                 C = true;
                             }else{
                                 C = false;
-                                objSumar.limpiarResultado();
+                                objOperaciones.limpiarResultado();
                             }
                             System.out.println("¿desea continuar con la suma? Y/N");
                             decision = leer.next().charAt(0);
                             if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y')) {
                                 do {
-                                    System.out.println(objRaizCuadrada.opracionResNum());
+                                    System.out.println(objOperaciones.raizCuadradaResNum());
                                     System.out.println("Desea borrar el calculo? Y/N");
                                     Dborrado = leer.next().charAt(0);
                                     if (Dborrado == 'N' || Dborrado == 'n'){
                                         C = true;
                                     }else{
                                         C = false;
-                                        objSumar.limpiarResultado();
+                                        objOperaciones.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar con la suma? Y/N");
                                     decision = leer.next().charAt(0);
@@ -285,42 +280,42 @@ public class vistaU {
                         System.out.println("Usted a elegido la opcion de porcentaje");
                         if (C == true){
                             do {
-                                System.out.println(objPorcentaje.opracionResNum());
+                                System.out.println(objOperaciones.porcentajeResNum(0));
                                 System.out.println("Desea borrar el calculo? Y/N");
                                 Dborrado = leer.next().charAt(0);
                                 if (Dborrado == 'N' || Dborrado == 'n'){
                                     C = true;
                                 }else{
                                     C = false;
-                                    objSumar.limpiarResultado();
+                                    objOperaciones.limpiarResultado();
                                 }
                                 System.out.println("¿desea continuar obteniendo porcentajes? Y/N");
                                 decision = leer.next().charAt(0);
                             } while ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y'));
                         }else {
-                            System.out.println(objPorcentaje.operacionDosNum());
+                            System.out.println(objOperaciones.potenciaDosNum(0,0));
                             System.out.println("Desea borrar el calculo? Y/N");
                             Dborrado = leer.next().charAt(0);
                             if (Dborrado == 'N' || Dborrado == 'n'){
                                 C = true;
                             }else{
                                 C = false;
-                                objSumar.limpiarResultado();
+                                objOperaciones.limpiarResultado();
                             }
                             System.out.println("¿desea continuar obteniendo porcentajes? Y/N");
                             decision = leer.next().charAt(0);
                             if ((Dborrado == 'N' || Dborrado == 'n') && (decision == 'Y' || decision
                                     == 'y')) {
                                 do {
-                                    System.out.println(objPorcentaje.opracionResNum());
+                                    System.out.println(objOperaciones.porcentajeResNum(0));
                                     System.out.println("Desea borrar el calculo? Y/N");
                                     Dborrado = leer.next().charAt(0);
                                     if (Dborrado == 'N' || Dborrado == 'n'){
                                         C = true;
                                     }else{
                                         C = false;
-                                        objSumar.limpiarResultado();
+                                        objOperaciones.limpiarResultado();
                                     }
                                     System.out.println("¿desea continuar obteniendo porcentajes? Y/N");
                                     decision = leer.next().charAt(0);
